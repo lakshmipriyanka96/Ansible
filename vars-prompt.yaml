@@ -1,0 +1,7 @@
+  - name: username
+    prompt: What is your username?
+    private: false
+  - name: password
+    prompt: Enter your password?
+    private: True
+  

@@ -1,0 +1,13 @@
+- name: play-level-variables
+  hosts: localhost
+  connection: local
+  vars:
+   Profession: Lawyer
+   Experience: 10YRS
+   Firm: ABC_Legal
+  tasks:
+    - name: print the profession information
+      vars:
+       Location: Hyderabad
+      ansible.builtin.debug:  
+       msg: "profession details: {{Profession}}, Level of experience: {{Experience}},Firm-name: {{Firm}}, Location details: {{Location}}"

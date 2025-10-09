@@ -1,0 +1,11 @@
+- name: play-level variables
+  hosts: localhost
+  connection: local #Ansible will run the playbook on the local machine
+  vars:
+   COURSE: B.TECH
+   DURATION: 4YRS
+   Institute: Nri
+  tasks:
+  - name: print the course info
+    ansible.builtin.debug:
+     msg: "course details: {{COURSE}}, duration: {{DURATION}}, institute_name: {{Institute}}"
